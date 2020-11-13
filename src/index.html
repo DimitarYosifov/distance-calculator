@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calc</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container" style="
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);">
+        <h2>Distance Calculator</h2>
+        <div style="float:right; " class="mt-2 mb-4">
+            <div style="display: inline;">
+                <p id="IP">IP Address:</p>
+                <input id="ip-address" type="text" style="line-height: initial; border: 1px solid black;">
+                <input type="button" value="X">
+            </div>
+            <input type="button" value="Calculate" id="calculate">
+        </div>
+
+        <table class="table table-striped">
+            <tbody>
+                <tr>
+                    <td>Country:</td>
+                    <td id="country"></td>
+                </tr>
+                <tr>
+                    <td>Time Zone:</td>
+                    <td id="timezone"></td>
+                </tr>
+                <tr>
+                    <td>Distance to Cayetano's office:</td>
+                    <td id="distance"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
